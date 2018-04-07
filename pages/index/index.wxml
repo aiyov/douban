@@ -1,0 +1,20 @@
+<!--index.wxml-->
+<scroll-view scroll-y="true" lower-threshold="200" bindscrolltolower="scrolltolower">
+  <view class="list_item" wx:for="{{movies}}" wx:key="index">
+   <view class='movie_item' wx:for="{{item}}" wx:for-item="movieInfo" wx:for-index="movieIndex" wx:key="movieIndex" bindtap="toMovieInfo">
+     <image class =  "poster" mode='widthFix' lazy-load='true'
+       src="{{movieInfo.images.small}}">
+     </image>
+     <view class='title'>
+       <text>{{movieInfo.title}} <text class='rate'>{{movieInfo.rating.average}}</text></text>
+     </view>
+     <view class="info">
+       <text>{{movieInfo.genres}} / {{movieInfo.year}}</text>
+     </view>
+   </view>
+</view>
+<view class='loading' wx:if="{{loading}}">
+  <image src='/assets/images/loading.gif'></image>
+</view>
+ <view class='noMovie' animation="{{animationData}}" >已经没有更多了!!!</view> 
+</scroll-view>

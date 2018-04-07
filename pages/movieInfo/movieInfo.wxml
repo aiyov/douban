@@ -1,0 +1,96 @@
+<!--pages/movieInfo/movieInfo.wxml-->
+<view class="movieInfo">
+  <view class='movie'>
+    <text class="movieName">机器人号</text>
+  </view>
+  <view class='movieType'>
+    <view class='movieTypeWrapper'>
+      <text class="movieScore"></text>
+      <text class="movieText">50分钟 / 历史 / 纪录片 / NHK(导演) / 2017-08-13(日本) 上映</text>
+    </view>
+    <image class="moviePoster" src='https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2496324933.webp'></image>
+  </view>
+  <view class="movieSource">
+    <text class="sourceTitle">在哪儿看这部电影</text>
+    <text class="sourceSite">1个播放源</text>
+  </view>
+  <view class="isSaw">
+    <text class="notSaw">想看</text>
+    <text class="seed">看过</text>
+  </view>
+  <view>
+    <text class='movieTitle'>机器人号的剧情简介</text>
+    <view class="movieIntroduce">
+      <text class="{{showSummary == true?'movieSummary showSummary':'movieSummary'}}" bindtap='showAll'>机器人9号（伊利亚•伍德 Elijah Wood 饰）突然醒来，机器人9号（伊利亚•伍德 Elijah Wood 饰）突然醒来，发现身边的世界充满危机，四处残败，一片末世景象</text>
+    </view>
+  </view>
+  <view class='actorsList'>
+    <text class='actorsTitle'>演员</text>
+  <scroll-view scroll-x="true" scroll-left="0">
+    <view class='actors'>
+      <view class="actorsItem">
+        <image mode='widthFix'     src='https://img3.doubanio.com/view/celebrity/s_ratio_celebrity/public/p33305.jpg'></image>
+        <view class="name">詹妮弗·康纳利</view>
+        <view class='identify'>演员</view>
+      </view>
+    </view>
+  </scroll-view>
+  </view>
+  <view class="tags">
+    <text class='tagsTitle'>查看更多豆瓣高分电影电视剧</text>
+    <view class="tag">
+      <view class="tagsItem">
+        <text>纪录片</text>
+      </view>
+      <view class="tagsItem">
+        <text>日本</text>
+      </view>
+      <view class="tagsItem">
+        <text>NHK</text>
+      </view>
+      <view class="tagsItem">
+        <text>纪录片</text>
+      </view>
+      <view class="tagsItem">
+        <text>日本</text>
+      </view>
+      <view class="tagsItem">
+        <text>NHK</text>
+      </view>
+    </view>
+  </view>
+  <view class="prevue">
+    <text class='prevueTitle'>机器人号的预告片(5)和图片(120)</text>
+    <scroll-view scroll-x="true" scroll-left="0" >
+      <view class='prevueList'>
+        <view class='prevueItem'>
+          <image src='https://img3.doubanio.com/view/photo/lthumb/public/p2518141711.webp' mode='widthFix'></image>
+        </view>
+        <view class='prevueItem'>
+          <image src='https://img3.doubanio.com/view/photo/lthumb/public/p2518141711.webp' mode='widthFix'></image>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+  <view class='comment'>
+    <text class='commentTitle'>机器人号的短评</text>
+    <view class="commentList">
+      <view class='commentItem'>
+        <view class='commentPerson'>
+          <image src='https://img1.doubanio.com/icon/up2316731-67.jpg'></image>
+          <view class='commentName'>
+            <view class='commentId'>法兰西胶片</view>
+            <view class='commentTime'>1周前</view>
+            <view class='commentContent'>
+              <text>再没有像王微这样浪费技术资源的人了，太自私了。</text>
+              <view class='dianzan'>
+                <image mode='widthFix' src='../../assets/images/dianzan.svg'></image>
+                <text>73</text>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

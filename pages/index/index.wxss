@@ -1,0 +1,57 @@
+/**index.wxss**/
+page {
+  height: 100%;
+}
+scroll-view {
+  height: 100%;
+}
+.list_item {
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 0 20rpx;
+}
+.movie_item {
+  width: 48%;
+  margin: 1%;
+  float: left;
+}
+.movie_item .poster {
+  width: 100%;
+}
+.movie_item .title {
+  font-size: 28rpx;
+  text-align: center;
+  color: #333;
+  margin: 5rpx 0;
+}
+.movie_item .title .rate{
+  color: #f00;
+}
+.movie_item .info {
+  text-align: center;
+  font-size: 24rpx;
+  color: #888;
+}
+.loading {
+  text-align: center;
+  height: 40rpx;
+  padding: 20rpx;
+}
+.loading image {
+  width: 40rpx;
+  height: 40rpx;
+}
+.noMovie {
+  position: fixed;
+  top: 20rpx;
+  left: 50%;
+  opacity: 0;
+  transform: translateX(-50%);
+  text-align: center;
+  padding: 20rpx;
+  font-size: 24rpx;
+  border-radius: 10rpx;
+  color: #888;
+  background: #fff;
+}
